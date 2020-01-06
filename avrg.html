@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Intro to Javascript </title>
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <script type="text/javascript" language="javascript">
+
+        	function Average(){
+
+        		var math=document.getElementById('maths').value;
+
+    		    var eng=document.getElementById('english').value;
+
+    		    var total= Number(math) + Number(eng);
+
+                var avrg= total/2
+
+                
+    		    document.getElementById('comment').innerHTML=avrg;
+
+    		    if(avrg<50){
+
+
+    		    	document.getElementById('demo').value= 'You failed';
+    		    	document.getElementById('demo').style.color='red';
+
+    		    }else{
+
+
+    		    	document.getElementById('demo').value= 'You passes';
+    		    	document.getElementById('demo').style.color= 'blue';
+
+
+    		    }
+
+
+        	}
+
+
+
+        </script>
+        
+        <body>
+
+        <table>
+
+
+    		<tr>
+    			
+    			<td> Subject</td>
+
+    			<td> score</td>
+    		</tr>
+
+    		<tr>
+
+    			<td> English </td>
+
+    			<td> <input type='text' value='' id='english'> </td>
+
+    		</tr>	
+
+    		<tr>
+
+    			<td> Maths </td>
+
+    			<td> <input type='text' value=''  id='maths'> </td>
+
+            </tr>
+
+
+    		<tr>
+
+    			<td><button type='button' onclick='Average()'>total</button></td>
+
+    			<td id='comment'><td>
+
+
+    		</tr>
+    			
+
+    			<tr>
+
+    			     <td>Comment</td>
+    			     <td><input type="text" id="demo"></td>	
+
+
+    			</tr>   
+
+
+        </table>  
+
+        </body>
+    
+
+    </html>	
+	
